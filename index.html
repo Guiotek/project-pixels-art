@@ -6,28 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paleta de Cores</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js">
-const colorBlack = document.body.getElementById('color-palette').getElementById('color1');
-const colorRed = document.body.getElementById('color-palette').getElementById('color2');
-const colorAqua = document.body.getElementById('color-palette').getElementById('color3');
-const colorOrange = document.body.getElementById('color-palette').getElementById('color4');
-const clickColor = document.body.getElementById('color-palette').querySelectorAll('.color')
-
-window.onload = colorBlack.classList.add('color selected');
-colorBlack.onClick=selectColor()
-function selectColor(){
-    let Cor = "Black"
-    return Cor
-}
-console.log(selectColor);
-
-
-    </script> 
+    <script src="script.js"></script> 
 </head>
 <body>
     <h1 id="title">Paleta de Cores</h1>
     <div id="color-palette">
-        <div class="color" id="color1"></div>
+        <div class="color selected" id="color1"></div>
         <div class="color" id="color2"></div>
         <div class="color" id="color3"></div>
         <div class="color" id="color4"></div>
