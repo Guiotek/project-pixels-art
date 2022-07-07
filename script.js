@@ -38,5 +38,31 @@ function initialColor() {
 }
 function paint(Color,pixel) {
     document.getElementById(pixel).style.backgroundColor = Color
-
+}
+function limpar() {
+    document.getElementById("pixel1").style.backgroundColor = 'White'
+    document.getElementById("pixel2").style.backgroundColor = 'White'
+    document.getElementById("pixel3").style.backgroundColor = 'White'
+    document.getElementById("pixel4").style.backgroundColor = 'White'
+    document.getElementById("pixel5").style.backgroundColor = 'White'
+    document.getElementById("pixel6").style.backgroundColor = 'White'
+    document.getElementById("pixel7").style.backgroundColor = 'White'
+    document.getElementById("pixel8").style.backgroundColor = 'White'
+    document.getElementById("pixel9").style.backgroundColor = 'White'
+    document.getElementById("pixel10").style.backgroundColor = 'White'
+    document.getElementById("pixel11").style.backgroundColor = 'White'
+    document.getElementById("pixel12").style.backgroundColor = 'White'
+    document.getElementById("pixel13").style.backgroundColor = 'White'
+    document.getElementById("pixel14").style.backgroundColor = 'White'
+    document.getElementById("pixel15").style.backgroundColor = 'White'
+    document.getElementById("pixel16").style.backgroundColor = 'White'
+    document.getElementById("pixel17").style.backgroundColor = 'White'
+    document.getElementById("pixel18").style.backgroundColor = 'White'
+    document.getElementById("pixel19").style.backgroundColor = 'White'
+    document.getElementById("pixel20").style.backgroundColor = 'White'
+    document.getElementById("pixel21").style.backgroundColor = 'White'
+    document.getElementById("pixel22").style.backgroundColor = 'White'
+    document.getElementById("pixel23").style.backgroundColor = 'White'
+    document.getElementById("pixel24").style.backgroundColor = 'White'
+    document.getElementById("pixel25").style.backgroundColor = 'White'
 }
