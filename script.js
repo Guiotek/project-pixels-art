@@ -1,39 +1,42 @@
-// const colorBlack = document.body.getElementById('color-palette').getElementById('color1');
-// const colorRed = document.body.getElementById('color-palette').getElementById('color2');
-// const colorAqua = document.body.getElementById('color-palette').getElementById('color3');
-// const colorOrange = document.body.getElementById('color-palette').getElementById('color4');
-// const clickColor = document.body.getElementById('color-palette').querySelectorAll('.color')
+let Color = 'Black'
+var blackk = document.getElementById("color1")
+window.onload = initialColor()
+function selected(param) {
+    var black = document.getElementById("color1")
+    var red = document.getElementById("color2")
+    var aqua = document.getElementById("color3")
+    var orange = document.getElementById("color4")
+    if (param === 'Black'){
+      black.classList.add("selected")
+      red.classList.remove("selected")
+      aqua.classList.remove("selected")
+      orange.classList.remove("selected")
+      Color = 'Black'
+    } else if (param === 'Red') {
+        black.classList.remove("selected")
+        red.classList.add("selected")
+        aqua.classList.remove("selected")
+        orange.classList.remove("selected")
+        Color = 'Red'
+    }else if (param === 'Aqua') {
+        black.classList.remove("selected")
+        red.classList.remove("selected")
+        aqua.classList.add("selected")
+        orange.classList.remove("selected")
+        Color = 'Aqua'
+    }else if (param === 'Orange') {
+        black.classList.remove("selected")
+        red.classList.remove("selected")
+        aqua.classList.remove("selected")
+        orange.classList.add("selected")
+        Color = 'Orange'
+    }
 
-// window.onload = colorBlack.classList.add('color selected');
-// colorBlack.addEventListener("click",selectColor)
-// function selectColor(){
-// let Cor = "Black"
-//     // if (<div class="color" id="color1"></div>) {
-//     //     document.body.getElementById('color-palette').getElementById('color1').classlist.add("color selected")
-//     //     document.body.getElementById('color-palette').getElementById('color2').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color3').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color4').className = "color"
-//     // } else if (<div class="color" id="color2"></div>) {
-//     //     document.body.getElementById('color-palette').getElementById('color1').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color2').className = "color selected"
-//     //     document.body.getElementById('color-palette').getElementById('color3').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color4').className = "color"
-//     //     Cor = "red"
-//     // } else if (<div class="color" id="color3"></div>) {
-//     //     document.body.getElementById('color-palette').getElementById('color1').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color2').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color3').className = "color selected"
-//     //     document.body.getElementById('color-palette').getElementById('color4').className = "color"
-//     //     Cor = "aqua"
-//     // } else if (<div class="color" id="color4"></div>){
-//     //     document.body.getElementById('color-palette').getElementById('color1').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color2').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color3').className = "color"
-//     //     document.body.getElementById('color-palette').getElementById('color4').className = "color selected"
-//     //     Cor = "orange"
-//     // }
-//     return Cor
-// }
-// console.log(selectColor);
+}
+function initialColor() {
+    Color = 'Black'
+}
+function paint(Color,pixel) {
+    document.getElementById(pixel).style.backgroundColor = Color
 
-// // cor clicada deve receber class="selected"
+}
